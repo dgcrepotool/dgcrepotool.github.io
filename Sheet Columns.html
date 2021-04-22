@@ -1,0 +1,227 @@
+<html><head><title>Sheet Columns</title></head><body><style>body  
+{background-color: #e8e8e8;color: black;}.main_div  
+{max-width:95vw;}.text_data {font-size: larger;display:  
+block;padding-top:.3vw;height:fit-content;width:fit-content;}.entry  
+{border: 2px solid black;border-radius: 6px;display:  
+block;padding:.2vw;margin:.2vw;margin-right:.4vw;margin-top:.4vw;height:fit-content;width:fit-content;}.child_entries  
+{display: flex;flex-direction:row;padding:.2vw;margin:.2vw;flex-flow:  
+wrap;height:fit-content;width:fit-content;}.type_class {width: 99%;border:  
+2px solid darkgreen;}.type_function {width: 100%;border: 2px solid  
+#01013c;}.type_argument {border: 2px solid #005353;}.type_key {border: 2px  
+solid #680068;}.type_instance_variable {border: 2px solid  
+#713e00;}.type_class_variable {border: 2px solid #7e0202;}.quick_url  
+{margin-left:2vw;}</style><a target="_blank"  
+href="https://docs.google.com/spreadsheets/d/1K4NDiHS4V95oPiwzkVXw00wvmy-4d9Fnquy-emW3Icg/edit#">  
+Source Sheet: PG23 - Google Apps Script SPD</a><br><div class="entry "><div  
+class="text_data"><a href="#line6-col0">~</a> <a  
+name="line6-col0">Sheet: "Organizations"</a></div><div  
+class="text_data">Description: used to create entries in  
+the "organizations" section of the JSON settings file</div><details  
+open><div class="child_entries"><div class="entry "><div  
+class="text_data"><a href="#line8-col1">~</a> <a name="line8-col1">Column:  
+A</a></div><div class="text_data">PG20 Settings File  
+Reference: "organizations"-> [entry X] -> "org_uid"</div></div><div  
+class="entry "><div class="text_data"><a href="#line10-col1">~</a> <a  
+name="line10-col1">Column: B</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [entry X] -> "name"</div></div><div  
+class="entry "><div class="text_data"><a href="#line12-col1">~</a> <a  
+name="line12-col1">Column: C</a></div><div class="text_data">PG20 Settings  
+File Reference: Not used in settings file</div></div><div  
+class="entry "><div class="text_data"><a href="#line14-col1">~</a> <a  
+name="line14-col1">Column: D</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [entry X] -> "org_key1"</div></div><div  
+class="entry "><div class="text_data"><a href="#line16-col1">~</a> <a  
+name="line16-col1">Column: E</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [entry X] -> "org_key2"</div></div><div  
+class="entry "><div class="text_data"><a href="#line18-col1">~</a> <a  
+name="line18-col1">Column: F</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [entry X]  
+-> "mac_address"</div></div></div></details></div><div class="entry "><div  
+class="text_data"><a href="#line20-col0">~</a> <a  
+name="line20-col0">Sheet: "Systems"</a></div><div  
+class="text_data">Description: used to create "systems" entries  
+under "organizations" entries in the JSON settings file</div><details  
+open><div class="child_entries"><div class="entry "><div  
+class="text_data"><a href="#line22-col1">~</a> <a  
+name="line22-col1">Column: A</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [organization ID] -> "systems" -> [entry  
+X] -> "system_id"</div></div><div class="entry "><div class="text_data"><a  
+href="#line24-col1">~</a> <a name="line24-col1">Column: B</a></div><div  
+class="text_data">PG20 Settings File Reference: "organizations"->  
+[organization ID] -> "systems" -> [entry X] -> "name"</div></div><div  
+class="entry "><div class="text_data"><a href="#line26-col1">~</a> <a  
+name="line26-col1">Column: C</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [organization ID] -> "systems" -> [entry  
+X] -> "description"</div></div><div class="entry "><div  
+class="text_data"><a href="#line28-col1">~</a> <a  
+name="line28-col1">Column: D</a></div><div class="text_data">Description:  
+this value is used as the [organization ID] key for the settings entries  
+in "Systems"-> columns A-C</div></div><div class="entry "><div  
+class="text_data"><a href="#line30-col1">~</a> <a  
+name="line30-col1">Column: E</a></div><div class="text_data">Description:  
+organization name associated with this the organization ID on this row,  
+this value is automaticaly set when when Column D's value is changed  
+or "organizations"-> Column B is  
+changed</div></div></div></details></div><div class="entry "><div  
+class="text_data"><a href="#line32-col0">~</a> <a  
+name="line32-col0">Sheet: "Devices"</a></div><div  
+class="text_data">Description: <br>- used to create entries in  
+the "devices" section of the PG20 settings file<br>- populate which devices  
+are associated with which systems under the systems part of the PG20  
+settings file.<br>- create device entries in the PG19 Ping Settings  
+File</div><details open><div class="child_entries"><div class="entry "><div  
+class="text_data"><a href="#line34-col1">~</a> <a  
+name="line34-col1">Column: A</a></div><div class="text_data">PG20 Settings  
+File Reference: ["devices"] -> [entry with matching device id] ->  
+["device_id"]</div><div class="text_data">PG19  Settings File Reference:  
+["devices"] -> [entry with matching device id] ->  
+["device_id"]</div></div><div class="entry "><div class="text_data"><a  
+href="#line37-col1">~</a> <a name="line37-col1">Column: B</a></div><div  
+class="text_data">PG20 Settings File Reference: ["devices"] -> [entry with  
+matching device id] -> ["name"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line39-col1">~</a> <a  
+name="line39-col1">Column: C</a></div><div class="text_data">PG20 Settings  
+File Reference: ["devices"] -> [entry with matching device id] ->  
+["description"]</div></div><div class="entry "><div class="text_data"><a  
+href="#line41-col1">~</a> <a name="line41-col1">Column: D</a></div><div  
+class="text_data">PG20 Settings File Reference: ["devices"] -> [entry with  
+matching device id] -> ["device_module"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line43-col1">~</a> <a  
+name="line43-col1">Column: E</a></div><div class="text_data">PG20 Settings  
+File Reference: "organizations"-> [organization ID of system ID]  
+-> "systems" -> [entry with matching system ID] -> ["devices"] -> [entry Y]  
+-> ["write_all_attributes"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line45-col1">~</a> <a  
+name="line45-col1">Column: F</a></div><div class="text_data">Settings File  
+Reference: "organizations"-> [organization ID of system ID] -> "systems" ->  
+[entry with matching system ID] -> ["system_id"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line47-col1">~</a> <a  
+name="line47-col1">Column: G</a></div><div class="text_data">Description:  
+system name associated with the system ID on this row, this value is  
+automaticaly set when when Column F's value is changed or "systems"->  
+Column B is changed</div><div class="text_data">Settings File Reference:  
+None</div></div><div class="entry "><div class="text_data"><a  
+href="#line50-col1">~</a> <a name="line50-col1">Column: H</a></div><div  
+class="text_data">PG20 Settings File Reference: ["devices"] -> [entry with  
+matching device id] -> ["settings"] -> ["hostname"]</div><div  
+class="text_data">PG19 Ping Settings File Reference: ["settings"] -> [entry  
+with matching device id] -> ["host_address"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line53-col1">~</a> <a  
+name="line53-col1">Column: I</a></div><div class="text_data">PG20 Settings  
+File Reference: ["devices"] -> [entry with matching device id] ->  
+["settings"] -> ["port"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line55-col1">~</a> <a  
+name="line55-col1">Column: J</a></div><div class="text_data">PG20 Settings  
+File Reference: ["devices"] -> [entry with matching device id] ->  
+["settings"] -> ["program_restart_command"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line57-col1">~</a> <a  
+name="line57-col1">Column: K</a></div><div class="text_data">PG20 Settings  
+File Reference: ["devices"] -> [entry with matching device id] ->  
+["settings"] -> ["ping_port"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line59-col1">~</a> <a  
+name="line59-col1">Column: L</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["ping_frequency"]</div></div><div class="entry "><div class="text_data"><a  
+href="#line61-col1">~</a> <a name="line61-col1">Column: M</a></div><div  
+class="text_data">PG19 Ping Settings File Reference: ["settings"] -> [entry  
+with matching device id]-> ["ping_count"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line63-col1">~</a> <a  
+name="line63-col1">Column: N</a></div><div class="text_data">PG19 Ping  
+Settings File Reference:["settings"] -> [entry with matching device id] ->  
+["online_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line65-col1">~</a> <a  
+name="line65-col1">Column: O</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["offline_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line67-col1">~</a> <a  
+name="line67-col1">Column: P</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["min_latency_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line69-col1">~</a> <a  
+name="line69-col1">Column: Q</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["max_latency_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line71-col1">~</a> <a  
+name="line71-col1">Column: R</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["avg_latency_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line73-col1">~</a> <a  
+name="line73-col1">Column: S</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["reset_stats_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line75-col1">~</a> <a  
+name="line75-col1">Column: T</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["communication_quality_threshold"]</div></div><div class="entry "><div  
+class="text_data"><a href="#line77-col1">~</a> <a  
+name="line77-col1">Column: U</a></div><div class="text_data">PG19 Ping  
+Settings File Reference: ["settings"] -> [entry with matching device id] ->  
+["ping_timeout"]</div></div><div class="entry "><div class="text_data"><a  
+href="#line79-col1">~</a> <a name="line79-col1">Column: V</a></div><div  
+class="text_data">PG20 Settings File Reference: ["devices"] -> [entry with  
+matching device id] -> ["settings"] -> ["debug_level"]</div></div><div  
+class="entry "><div class="text_data"><a href="#line81-col1">~</a> <a  
+name="line81-col1">Column: W</a></div><div class="text_data">Description:  
+add any other module settings as JSON dictionary that will be placed in  
+the "settings" dictionary of the device's entry</div><div  
+class="text_data">PG20 Settings File Reference: data will be added to  
+["devices"] -> [entry with matching device id] -> ["settings"]  
+-></div></div><div class="entry "><div class="text_data"><a  
+href="#line84-col1">~</a> <a name="line84-col1">Column: X</a></div><div  
+class="text_data">Description: add any other module settings as JSON  
+dictionary that will be placed in the "settings" dictionary of the device's  
+entry</div><div class="text_data">PG20 Settings File Reference: data will  
+be added to ["devices"] -> [entry with matching device id] -> ["settings"]  
+-></div></div><div class="entry "><div class="text_data"><a  
+href="#line87-col1">~</a> <a name="line87-col1">Column: Y</a></div><div  
+class="text_data">Description: add any other module settings as JSON  
+dictionary that will be placed in the "settings" dictionary of the device's  
+entry</div><div class="text_data">PG20 Settings File Reference: data will  
+be added to ["devices"] -> [entry with matching device id] -> ["settings"]  
+-></div></div></div></details></div><div class="entry "><div  
+class="text_data"><a href="#line91-col0">~</a> <a  
+name="line91-col0">Sheet: "Ping Servers" (FUTURE)</a></div><div  
+class="text_data">Description: <br>- used to know which device entries to  
+put in what PG19 Ping Settings File<br>- used to build pg19 server  
+configuration files</div><details open><div class="child_entries"><div  
+class="entry "><div class="text_data"><a href="#line93-col1">~</a> <a  
+name="line93-col1">Column: A</a></div><div class="text_data">Description:  
+the number ID of the PG19 Ping Settings File and server configuration file  
+that will be generated for devices using this settings file</div><div  
+class="text_data">PG19 server configuration File Reference: used as the  
+{ID} part of the filename</div><div class="text_data">PG19 Settings File  
+Reference: used as part of {ID} the filename</div></div><div  
+class="entry "><div class="text_data"><a href="#line97-col1">~</a> <a  
+name="line97-col1">Column: B</a></div><div class="text_data">Description:  
+The human readable name of the ping settings file, this is only used on  
+this sheet to make it more understandable</div></div><div  
+class="entry "><div class="text_data"><a href="#line99-col1">~</a> <a  
+name="line99-col1">Column: C</a></div><div class="text_data">PG19 server  
+configuration File Reference: "p1_address_ip"</div></div><div  
+class="entry "><div class="text_data"><a href="#line101-col1">~</a> <a  
+name="line101-col1">Column: D</a></div><div class="text_data">PG19 server  
+configuration File Reference: "p1_port"</div></div><div class="entry "><div  
+class="text_data"><a href="#line103-col1">~</a> <a  
+name="line103-col1">Column: E</a></div><div class="text_data">Description:  
+the command that was will be used to launch the PG19 server with this  
+specific ping settings file and server configuration file</div><div  
+class="text_data">PG20 Settings File Reference: ["devices"] -> [device ID  
+entries from "devices" sheet that have a column J value that matches Column  
+A on this sheet] -> ["settings"] ->  
+["program_restart_command"]</div></div></div></details></div><div  
+class="entry "><div class="text_data"><a href="#line108-col0">~</a> <a  
+name="line108-col0">Settings Files</a></div><details open><div  
+class="child_entries"><div class="entry "><div class="text_data"><a  
+href="#line109-col1">~</a> <a name="line109-col1">File: PG20 Settings  
+File</a></div><div class="text_data">Filename: {sheet name with spaces and  
+other non filesystem friendly characters replaced by _}   
++ "_pg20.json"</div></div><div class="entry "><div class="text_data"><a  
+href="#line111-col1">~</a> <a name="line111-col1">File: PG19 Settings  
+Files</a></div><div class="text_data">Filename: {sheet name with spaces and  
+other non filesystem friendly characters replaced by _}   
++ "_pg19_settings_" + "1" + ".json"</div></div><div class="entry "><div  
+class="text_data"><a href="#line113-col1">~</a> <a  
+name="line113-col1">File: PG19 Server Configuration Files</a></div><div  
+class="text_data">Filename: {sheet name with spaces and other non  
+filesystem friendly characters replaced by _}  + "_pg19_server_" + "1"  
++ ".json"</div></div></div></details></div></div></div></body></html>
